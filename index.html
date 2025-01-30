@@ -27,7 +27,9 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              header: "#FFF9F4",
+              body: "#F9DF8A",
+              primary: "#FFDC26",
             },
             fontFamily: {
               sora: ["Sora", "serif"],
@@ -38,5 +40,60 @@
       };
     </script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- navbar section -->
+      <nav class="bg-header">
+        <div
+          class="navbar border-b sm:border-none border-gray-300 font-sora max-w-screen-lg mx-auto"
+        >
+          <div class="navbar-start gap-2">
+            <img src="assets/logo-header.png" alt="" />
+            <h1 class="hidden sm:block text-lg">Browse <span class="text-primary">4</span>Pets</h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="text-sm menu-horizontal space-x-6">
+              <li><a class="cursor-pointer">Find a pet</a></li>
+              <li><a class="cursor-pointer">Breeds</a></li>
+              <li><a class="cursor-pointer">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown sm:hidden">
+              <!-- task: add hover and animation transition (+btn padding) -->
+              <div tabindex="0" role="button" class="">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-6 w-36"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <!-- notification icon -->
+            <button class="hidden sm:block btn btn-ghost btn-circle w-8 hover:bg-transparent">
+              <i class="fa-regular fa-bell"></i>
+            </button>
+            <!-- search icon -->
+            <button class="hidden sm:block btn btn-ghost btn-circle w-8 hover:bg-transparent">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <!-- login button -->
+            <button
+              class="hidden sm:block mx-1 py-2 px-6 rounded-md outline-primary outline-1 outline"
+            >
+              Login
+            </button>
+            <!-- register button -->
+            <button class="hidden sm:block mx-1 py-2 px-6 rounded-md bg-primary">Register</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
