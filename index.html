@@ -376,7 +376,7 @@
             class="bg-gradient-to-r from-[#F7CCFB] to-[#AFD2FD] rounded-xl p-8 lg:px-16 h-[330px] lg:flex-[2]"
           >
             <p class="hidden lg:block font-sora mt-20">Under Price</p>
-            <h3 class="text-xl">Pet Grooming Mitt</h3>
+            <h3 class="text-xl lg:text-2xl">Pet Grooming Mitt</h3>
             <p class="text-white hidden lg:block">(Easy Hair Removal)</p>
             <h1 class="text-4xl mt-2 text-white lg:text-black">$7.99</h1>
             <img
@@ -399,9 +399,7 @@
     </main>
     <footer class="relative mt-80 lg:mt-72">
       <!-- ===== newsletter section ===== -->
-      <section
-        class="absolute bottom-36 lg:bottom-56 lg:left-[calc((100%-64rem)/2)] lg:min-w-[64rem]"
-      >
+      <section class="absolute -top-64 lg:-top-44 lg:left-[calc((100%-64rem)/2)] lg:min-w-[64rem]">
         <div
           class="flex flex-col items-center lg:flex-row lg:justify-evenly bg-header mx-4 px-4 py-6 lg:pt-8 rounded-xl"
         >
@@ -409,13 +407,13 @@
             <img class="w-48 lg:w-56" src="assets/cute-pet-mid.png" alt="cute-pet-mid" />
           </div>
           <div class="flex flex-col items-center lg:items-start gap-4 lg:flex-[1.8]">
-            <h3 class="font-adlam text-2xl">Get Pawsome News!</h3>
-            <p class="font-sora text-center">
+            <h3 class="font-adlam text-xl lg:text-2xl">Get Pawsome News!</h3>
+            <p class="font-sora text-center text-sm lg:text-base">
               Exclusive training tips, ticks, product deals and more.
             </p>
             <div class="w-full">
               <input
-                class="rounded-md lg:w-1/2 w-full px-6 py-3 focus:outline-none"
+                class="rounded-md text-sm lg:text-base lg:w-1/2 w-full px-6 py-3 focus:outline-none"
                 type="email"
                 placeholder="Enter email..."
               />
@@ -431,8 +429,40 @@
         </div>
       </section>
       <!-- ===== footer section ====== -->
-      <section class="bg-card">
-        <div class="max-w-screen-lg mx-auto h-96"></div>
+      <section class="bg-card font-sora">
+        <div class="max-w-screen-lg mx-auto h-96 pt-72 pb-96 lg:pb-0 lg:pt-56 px-4">
+          <div class="flex flex-col lg:flex-row justify-between gap-8">
+            <!-- column one -->
+            <div class="lg:max-w-72">
+              <!-- logo -->
+              <div class="flex items-center gap-2">
+                <img class="w-9" src="assets/logo-footer.png" alt="logo" />
+                <h2 class="text-xl">Browse <span class="text-orange-500">4</span> Pets</h2>
+              </div>
+              <!-- footer description -->
+              <p class="text-xs lg:text-sm mt-4">
+                Discover a world of treats, toys, and essentials handpicked for your furry friends
+              </p>
+            </div>
+            <!-- column two -->
+            <div class="flex flex-col gap-4 text-xs lg:text-sm mt-4 mr-20">
+              <a href="#">Find a pet</a>
+              <a href="#">Breeds</a>
+              <a href="#">Contact us</a>
+            </div>
+            <!-- column three -->
+            <div>
+              <p class="mt-6 lg:mt-14 text-sm lg:text-base">Follow Us</p>
+              <!-- social icons -->
+              <div class="flex gap-4 text-lg mt-2">
+                <i class="cursor-pointer fa-brands fa-facebook"></i>
+                <i class="cursor-pointer fa-brands fa-instagram"></i>
+                <i class="cursor-pointer fa-brands fa-linkedin"></i>
+                <i class="cursor-pointer fa-brands fa-youtube"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
   </body>
