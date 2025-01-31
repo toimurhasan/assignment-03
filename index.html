@@ -36,6 +36,25 @@
               sora: ["Sora", "serif"],
               adlam: ["ADLaM Display", "serif"],
             },
+            animation: {
+              move: "move 5s infinite",
+            },
+            keyframes: {
+              move: {
+                "0%": {
+                  transform: "translate(-6px, -4px)  scale(0.999)",
+                },
+                "33%": {
+                  transform: "translate(7px, 5px)  scale(0.999)",
+                },
+                "66%": {
+                  transform: "translate(5px, 7px)  scale(0.999)",
+                },
+                "100%": {
+                  transform: "translate(-6px, -4px) scale(0.999)",
+                },
+              },
+            },
           },
         },
       };
@@ -129,8 +148,15 @@
       <section
         class="max-w-screen-lg mx-auto px-4 pb-36 lg:pb-56 bg-[url('./assets/cat-big.png')] bg-contain bg-no-repeat bg-right-bottom"
       >
-        <div class="pt-8 lg:pt-16 space-y-4 lg:space-y-6 max-w-lg">
-          <h1 class="font-adlam text-3xl lg:text-5xl">
+        <div class="relative pt-8 lg:pt-16 space-y-4 lg:space-y-6 max-w-lg">
+          <!-- created for animation -->
+          <h1
+            class="animate-move font-adlam text-3xl lg:text-5xl bg-gradient-to-r from-rose-300 to-sky-400 via-yellow-400 text-transparent bg-clip-text filter blur-sm"
+          >
+            Pamper Your Pet, Because They Deserve the Best
+          </h1>
+          <!-- original heading -->
+          <h1 class="absolute top-4 lg:top-10 font-adlam text-3xl lg:text-5xl">
             Pamper Your Pet, Because They Deserve the Best
           </h1>
           <p class="font-sora">
