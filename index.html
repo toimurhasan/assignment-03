@@ -181,7 +181,9 @@
         <h3 class="font-adlam text-2xl">Browse By Categories</h3>
         <div class="font-sora grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-8 gap-4">
           <!-- dog card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/dog-cartoon.png" alt="dog-cartoon" />
             </div>
@@ -189,7 +191,9 @@
             <p class="text-sm">3 items</p>
           </div>
           <!-- fish card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/fish-cartoon.png" alt="fish-cartoon" />
             </div>
@@ -197,7 +201,9 @@
             <p class="text-sm">3 items</p>
           </div>
           <!-- cat card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/cat-cartoon.png" alt="cat-cartoon" />
             </div>
@@ -205,7 +211,9 @@
             <p class="text-sm">3 items</p>
           </div>
           <!-- birds card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/bird-cartoon.png" alt="bird-cartoon" />
             </div>
@@ -213,7 +221,9 @@
             <p class="text-sm">3 items</p>
           </div>
           <!-- small pets card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/mouse-cartoon.png" alt="mouse-cartoon" />
             </div>
@@ -221,7 +231,9 @@
             <p class="text-sm">3 items</p>
           </div>
           <!-- rabit card -->
-          <div class="bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4">
+          <div
+            class="cursor-pointer hover:scale-105 transition bg-card rounded-lg flex items-center flex-col gap-1 p-6 lg:p-4"
+          >
             <div class="p-6 rounded-full bg-white inline-block">
               <img class="w-10 h-10" src="assets/rabbit-cartoon.png" alt="rabbit-cartoon" />
             </div>
@@ -401,6 +413,7 @@
 
       <!-- ===== services section ===== -->
       <section class="max-w-screen-lg mx-auto mt-16 px-4">
+        <!-- services section info -->
         <h3 class="font-adlam text-2xl lg:text-center mb-2">Pet Services</h3>
         <p class="font-sora text-xs lg:text-sm lg:text-center mb-2">
           Personalized expert care for all breeds and needs
@@ -408,65 +421,62 @@
         <div class="flex justify-start lg:justify-center">
           <a href="#" class="mb-10 font-sora text-xs lg:text-sm text-blue-600">Learn More</a>
         </div>
+        <!-- services section cards -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer">
-            <figure class="h-[11.25rem] lg:h-[14.27rem] overflow-hidden rounded-t-2xl">
-              <img
-                class="object-cover min-h-[12rem] lg:h-60"
-                src="assets/happy-hour.jpg"
-                alt="happy-hour"
-              />
+          <!-- yappy hour card -->
+          <div
+            class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer opacity-85 hover:opacity-100"
+          >
+            <figure class="rounded-t-2xl flex-1">
+              <img class="h-full object-cover" src="assets/happy-hour.jpg" alt="happy-hour" />
             </figure>
           </div>
-          <div class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer">
-            <div class="flex justify-center bg-red-600 rounded-t-2xl py-3">
+          <!-- training card -->
+          <div
+            class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer opacity-85 hover:opacity-100"
+          >
+            <div class="flex justify-center bg-red-700 rounded-t-2xl py-1 lg:py-3">
               <h2 class="card-title font-adlam text-white font-thin">
                 <span class="bg-white px-[0.4rem] rounded-full">
-                  <i class="text-red-600 text-base fa-solid fa-medal"></i>
+                  <i class="text-red-700 text-base fa-solid fa-medal"></i>
                 </span>
                 TRAINING
               </h2>
             </div>
-            <figure class="h-32 lg:h-44 overflow-hidden">
-              <img
-                class="min-h-32 lg:h-44 object-cover"
-                src="assets/dog-training.jpg"
-                alt="dog-training"
-              />
+            <figure class="flex-1">
+              <img class="h-full object-cover" src="assets/dog-training.jpg" alt="dog-training" />
             </figure>
           </div>
-          <div class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer">
-            <div class="flex justify-center bg-red-600 rounded-t-2xl py-3">
+          <!-- pets hotel card -->
+          <div
+            class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer opacity-85 hover:opacity-100"
+          >
+            <div class="flex justify-center bg-red-700 rounded-t-2xl py-1 lg:py-3">
               <h2 class="card-title font-adlam text-white font-thin">
                 <span class="bg-white flex place-content-center px-1 py-[0.1rem] rounded-full">
-                  <i class="text-red-600 text-base fa-solid fa-house-flag"></i>
+                  <i class="text-red-700 text-base fa-solid fa-house-flag"></i>
                 </span>
                 PETS HOTEL
               </h2>
             </div>
-            <figure class="h-32 lg:h-44 overflow-hidden">
-              <img
-                class="min-h-32 lg:h-44 object-cover"
-                src="assets/dog-hotel.jpg"
-                alt="dog-hotel"
-              />
+            <figure class="flex-1">
+              <img class="h-full object-cover" src="assets/dog-hotel.jpg" alt="dog-hotel" />
             </figure>
           </div>
-          <div class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer">
-            <div class="flex justify-center bg-red-600 rounded-t-2xl py-3">
+          <!-- day camp card -->
+          <div
+            class="card border border-gray-100 shadow-lg hover:shadow-xl cursor-pointer opacity-85 hover:opacity-100"
+          >
+            <div class="flex justify-center bg-red-700 rounded-t-2xl py-1 lg:py-3">
               <h2 class="card-title font-adlam text-white font-thin">
                 <span class="bg-white flex place-content-center px-1 rounded-full">
-                  <i class="text-red-600 text-base fa-solid fa-baseball"></i>
+                  <i class="text-red-700 text-base fa-solid fa-baseball"></i>
                 </span>
                 DAY CAMP
               </h2>
             </div>
-            <figure class="h-32 lg:h-44 overflow-hidden">
-              <img
-                class="min-h-32 lg:h-44 object-cover"
-                src="assets/day-camp.jpeg"
-                alt="day-camp"
-              />
+            <figure class="flex-1">
+              <img class="h-full object-cover" src="assets/day-camp.jpeg" alt="day-camp" />
             </figure>
           </div>
         </div>
